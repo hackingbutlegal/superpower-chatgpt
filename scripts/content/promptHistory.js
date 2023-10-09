@@ -8,10 +8,10 @@ function createPromptHistoryModal() {
     createModal('My Prompt History', 'All your personal and favorite prompts are saved here.', bodyContent, actionsBarContent);
     const historySearchInput = document.getElementById('history-search-input');
     historySearchInput.focus();
-    updateHisotryList();
+    updateHistoryList();
   });
 }
-function updateHisotryList() {
+function updateHistoryList() {
   const existingEmptyHistoryList = document.getElementById('history-list-empty');
   if (existingEmptyHistoryList) existingEmptyHistoryList.remove();
   const historyList = document.querySelector('#prompt-history-list');
